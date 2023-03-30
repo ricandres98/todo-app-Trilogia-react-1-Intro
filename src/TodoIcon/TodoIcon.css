@@ -1,0 +1,21 @@
+.TodoIcon {
+    width: 20px;
+    height: 20px;
+    transition: transform .3s ease-out;
+}
+.TodoIcon:hover {
+    transform: scale(1.2);
+    transition: transform .1s ease-out;
+}
+.TodoIcon.x-icon {
+    color: darkred;
+}
+.TodoIcon.check-icon {
+    color: green;
+}
+.TodoIcon.checked{
+    color: gray;
+}
+.TodoIcon.checked:hover {
+    transform: none;
+}

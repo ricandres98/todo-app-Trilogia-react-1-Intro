@@ -1,0 +1,29 @@
+.TodoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    background-color: floralwhite;
+    border-radius: 4px;
+}
+.TodoItem.checked {
+    background-color: lightgray;
+}
+.TodoItem button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+.TodoItem p {
+    font-size: 16px;
+    max-width: 240px;
+    text-align: center;
+}
+.TodoItem p.checked {
+    text-decoration: line-through;
+}

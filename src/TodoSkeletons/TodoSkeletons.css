@@ -1,0 +1,67 @@
+.TodoSkeletons {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.TodoSkeletons__child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    /* background-color: floralwhite;
+    animation: skeleton 1.5s infinite; */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgb(200,199,199));
+    background-size: 400%;
+    animation: loadingAnimation 3s infinite;
+    opacity: 1;
+}
+/* .TodoSkeletons__child:nth-child(2) {
+    animation-delay: 0.25s;
+}
+.TodoSkeletons__child:nth-child(3) {
+    animation-delay: .5s;
+}
+.TodoSkeletons__child:nth-child(4) {
+    animation-delay: .75s;
+} */
+.TodoSkeletons button {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+.TodoSkeletons button svg {
+    width: 20px;
+    height: 20px ;
+}
+
+.TodoSkeletons button:first-of-type svg {
+    color: gray;
+}
+.TodoSkeletons button:nth-of-type(2) svg {
+    color: darkred;
+}
+@keyframes skeleton {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes loadingAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
