@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-app-Trilogia-react-1-Intro/static/css/main.fb0f367c.css",
+    "main.js": "/todo-app-Trilogia-react-1-Intro/static/js/main.b1db673f.js",
+    "index.html": "/todo-app-Trilogia-react-1-Intro/index.html",
+    "main.fb0f367c.css.map": "/todo-app-Trilogia-react-1-Intro/static/css/main.fb0f367c.css.map",
+    "main.b1db673f.js.map": "/todo-app-Trilogia-react-1-Intro/static/js/main.b1db673f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb0f367c.css",
+    "static/js/main.b1db673f.js"
+  ]
+}
