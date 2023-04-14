@@ -14,7 +14,13 @@
     border: none;
     border-radius: 2px;
     text-align: center;
+    background-color: azure;
 }
 .TodoSearch input:focus-visible {
     outline: 2px orange solid;
+}
+.TodoSearch input:disabled {
+    color: inherit;
+    background-color: white;
+    opacity: 0.75;
 }

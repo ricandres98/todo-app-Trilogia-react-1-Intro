@@ -8,3 +8,6 @@
     background-color: darkcyan;
     color: azure;
 }
+.TodoCounter--loading{
+    opacity: 75%;
+}
