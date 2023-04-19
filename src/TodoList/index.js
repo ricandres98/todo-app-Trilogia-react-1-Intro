@@ -8,10 +8,10 @@ const TodoList = (props) => {
       {props.error && props.onError()}
       {props.loading && props.onLoading()}
       {!props.loading && !props.totalTodos && props.onEmptyTodos()}
-      {(!!props.totalTodos && !props.filteredTodos.length) && props.onEmptySearchResults('algo')}
+      {(!!props.totalTodos && !props.filteredTodos.length) && props.onEmptySearchResults()}
 
       <ul>
-        {props.filteredTodos.map(renderFunc)}
+        {(!props.loading && !props.error) && props.filteredTodos.map(renderFunc)}
       </ul>
     </section>
   );

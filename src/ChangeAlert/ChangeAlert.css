@@ -1,0 +1,41 @@
+.ChangeAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: floralwhite;
+    padding: 20px;
+    border-radius: 5px;
+}
+.ChangeAlert p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ChangeAlert svg {
+    margin-bottom: 10px;
+    width: 70px;
+    color: rgb(7, 63, 63);
+    animation: reloadIcon 1.5s infinite;
+    transform: rotate(0);
+}
+.ChangeAlert button {
+    border: none;
+    padding: 5px 7px;
+    background-color: darkcyan;
+    border-radius: 5px;
+    color: floralwhite;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font);
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes reloadIcon {
+    0%{
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
