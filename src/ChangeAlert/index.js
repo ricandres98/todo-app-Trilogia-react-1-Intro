@@ -1,10 +1,12 @@
 import React from "react";
-import { withStorageListener } from "./withStorageListener";
+import { useStorageListener } from "./useStorageListener";
 import { Modal } from "../Modal";
 import { ReloadIcon } from "./ReloadIcon";
 import './ChangeAlert.css';
 
-function ChangeAlert({ show, toggleShow }) {
+function ChangeAlert({ sincronizeTodos }) {
+  const { show, toggleShow } = useStorageListener(sincronizeTodos);
+
   if (show) {
     return (
       <Modal>
@@ -22,6 +24,4 @@ function ChangeAlert({ show, toggleShow }) {
   }
 }
 
-const ChangeAlertWithStorageListener = withStorageListener(ChangeAlert);
-
-export { ChangeAlertWithStorageListener };
+export { ChangeAlert };
